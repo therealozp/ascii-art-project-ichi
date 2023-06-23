@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>funny ascii app</title>
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<div class="titleDiv">
+			<h2 class="title">a funny ascii app -- stupid idea # 1</h2>
+			<h5 class="subtitle">by khang</h5>
+		</div>
+		<div>
+			<input type="file" id="imageUpload" accept="image/*" />
+		</div>
+		<div style="display: flex; flex-direction: column; width: 150px"">
+			<div style="display: flex; width: 200px; align-items: center;">
+				<label for="scale" style="margin-right: 10px"> resolution: </label>
+				<p id="resText">10 px</p>
+			</div>
+			
+			<input
+				type="range"
+				id="scaleSlider"
+				min="1"
+				max="20"
+				value="10"
+				step="1"
+			/>
+			
+		</div>
+		<button id="drawButton" style="width: 70px">draw</button>
+		<canvas id="canvas"></canvas>
+
+		<script src="script.js"></script>
+	</body>
+</html>
