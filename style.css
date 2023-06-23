@@ -1,0 +1,17 @@
+* {
+	padding: 6px;
+}
+div {
+	padding: 8px;
+}
+.titleDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.ascii-out {
+	font-family: monospace;
+	letter-spacing: 1rem;
+	line-height: 0.5rem;
+}
